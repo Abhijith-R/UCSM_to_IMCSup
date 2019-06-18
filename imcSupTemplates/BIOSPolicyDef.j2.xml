@@ -1,0 +1,170 @@
+<biosSettings status="modified">
+    <biosVfCDNEnable status="modified" vpCDNEnable="platform-default"></biosVfCDNEnable>
+    <biosVfPOSTErrorPause status="modified" vpPOSTErrorPause="{{ biosPolicy['POST-error-pause'] }}"></biosVfPOSTErrorPause>
+    <biosVfTPMSupport status="modified" vpTPMSupport="platform-default"></biosVfTPMSupport>
+    <biosVfAssertNMIOnPERR status="modified" vpAssertNMIOnPERR="platform-default"></biosVfAssertNMIOnPERR>
+    <biosVfAssertNMIOnSERR status="modified" vpAssertNMIOnSERR="platform-default"></biosVfAssertNMIOnSERR>
+    <biosVfConsoleRedirection status="modified" vpBaudRate="platform-default" vpConsoleRedirection="platform-default"
+                              vpFlowControl="platform-default" vpLegacyOSRedirection="platform-default"
+                              vpPuttyKeyPad="platform-default" vpRedirectionAfterPOST="platform-default"
+                              vpTerminalType="platform-default"></biosVfConsoleRedirection>
+    <biosVfFRB2Enable status="modified" vpFRB2Enable="platform-default"></biosVfFRB2Enable>
+    <biosVfOSBootWatchdogTimer status="modified" vpOSBootWatchdogTimer="platform-default"></biosVfOSBootWatchdogTimer>
+    <biosVfOSBootWatchdogTimerPolicy status="modified"
+                                     vpOSBootWatchdogTimerPolicy="platform-default"></biosVfOSBootWatchdogTimerPolicy>
+    <biosVfOSBootWatchdogTimerTimeout status="modified"
+                                      vpOSBootWatchdogTimerTimeout="platform-default"></biosVfOSBootWatchdogTimerTimeout>
+    <biosVfOutOfBandMgmtPort status="modified" vpOutOfBandMgmtPort="platform-default"></biosVfOutOfBandMgmtPort>
+    <biosVfUCSMBootOrderRuleControl status="modified"
+                                    vpUCSMBootOrderRule="platform-default"></biosVfUCSMBootOrderRuleControl>
+    <biosVfQPIConfig status="modified" vpQPILinkFrequency="platform-default"></biosVfQPIConfig>
+    <biosVfQpiSnoopMode status="modified" vpQpiSnoopMode="platform-default"></biosVfQpiSnoopMode>
+    <biosVfLegacyUSBSupport status="modified" vpLegacyUSBSupport="platform-default"></biosVfLegacyUSBSupport>
+    <biosVfPchUsb30Mode status="modified" vpPchUsb30Mode="platform-default"></biosVfPchUsb30Mode>
+    <biosVfUSBBootConfig status="modified" vpMakeDeviceNonBootable="platform-default"></biosVfUSBBootConfig>
+    <biosVfUSBEmulation status="modified" vpUSBEmul6064="platform-default"></biosVfUSBEmulation>
+    <biosVfUSBPortsConfig status="modified" vpAllUsbDevices="platform-default" vpUsbPortFront="platform-default"
+                          vpUsbPortInternal="platform-default" vpUsbPortKVM="platform-default"
+                          vpUsbPortRear="platform-default" vpUsbPortSDCard="platform-default"
+                          vpUsbPortVMedia="platform-default"></biosVfUSBPortsConfig>
+    <biosVfUsbXhciSupport status="modified" vpUsbXhciSupport="platform-default"></biosVfUsbXhciSupport>
+    <biosVfSerialPortAEnable status="modified" vpSerialPortAEnable="platform-default"></biosVfSerialPortAEnable>
+    <biosVfAdjacentCacheLinePrefetch status="modified"
+                                     vpAdjacentCacheLinePrefetch="platform-default"></biosVfAdjacentCacheLinePrefetch>
+    <biosVfAltitude status="modified" vpAltitude="platform-default"></biosVfAltitude>
+    <biosVfAutonumousCstateEnable status="modified"
+                                  vpAutonumousCstateEnable="platform-default"></biosVfAutonumousCstateEnable>
+    <biosVfBootPerformanceMode status="modified" vpBootPerformanceMode="platform-default"></biosVfBootPerformanceMode>
+    <biosVfCPUEnergyPerformance status="modified"
+                                vpCPUEnergyPerformance="platform-default"></biosVfCPUEnergyPerformance>
+    <biosVfCPUFrequencyFloor status="modified" vpCPUFrequencyFloor="platform-default"></biosVfCPUFrequencyFloor>
+    <biosVfCPUPerformance status="modified" vpCPUPerformance="platform-default"></biosVfCPUPerformance>
+    <biosVfCPUPowerManagement status="modified" vpCPUPowerManagement="platform-default"></biosVfCPUPowerManagement>
+    <biosVfClosedLoopThermThrotl status="modified"
+                                 vpClosedLoopThermThrotl="platform-default"></biosVfClosedLoopThermThrotl>
+    <biosVfCmciEnable status="modified" vpCmciEnable="platform-default"></biosVfCmciEnable>
+    <biosVfConfigTDP status="modified" vpConfigTDP="platform-default"></biosVfConfigTDP>
+    <biosVfCoreMultiProcessing status="modified" vpCoreMultiProcessing="platform-default"></biosVfCoreMultiProcessing>
+    <biosVfDCUPrefetch status="modified" vpIPPrefetch="platform-default"
+                       vpStreamerPrefetch="platform-default"></biosVfDCUPrefetch>
+    <biosVfDRAMClockThrottling status="modified" vpDRAMClockThrottling="platform-default"></biosVfDRAMClockThrottling>
+    <biosVfDemandScrub status="modified" vpDemandScrub="platform-default"></biosVfDemandScrub>
+    <biosVfDirectCacheAccess status="modified" vpDirectCacheAccess="platform-default"></biosVfDirectCacheAccess>
+    <biosVfEngPerfTuning status="modified" vpEngPerfTuning="platform-default"></biosVfEngPerfTuning>
+    <biosVfEnhancedIntelSpeedStepTech status="modified"
+                                      vpEnhancedIntelSpeedStepTech="platform-default"></biosVfEnhancedIntelSpeedStepTech>
+    <biosVfExecuteDisableBit status="modified" vpExecuteDisableBit="platform-default"></biosVfExecuteDisableBit>
+    <biosVfExtendedAPIC status="modified" vpExtendedAPIC="platform-default"></biosVfExtendedAPIC>
+    <biosVfHWPMEnable status="modified" vpHWPMEnable="platform-default"></biosVfHWPMEnable>
+    <biosVfHardwarePrefetch status="modified" vpHardwarePrefetch="platform-default"></biosVfHardwarePrefetch>
+    <biosVfIMCInterleave status="modified" vpIMCInterleave="platform-default"></biosVfIMCInterleave>
+    <biosVfIntelHyperThreadingTech status="modified"
+                                   vpIntelHyperThreadingTech="platform-default"></biosVfIntelHyperThreadingTech>
+    <biosVfIntelTurboBoostTech status="modified" vpIntelTurboBoostTech="platform-default"></biosVfIntelTurboBoostTech>
+    <biosVfIntelVirtualizationTechnology status="modified"
+                                         vpIntelVirtualizationTechnology="platform-default"></biosVfIntelVirtualizationTechnology>
+    <biosVfIohErrorEn status="modified" vpIohErrorEnable="platform-default"></biosVfIohErrorEn>
+    <biosVfKTIPrefetch status="modified" vpKTIPrefetch="platform-default"></biosVfKTIPrefetch>
+    <biosVfLLCPrefetch status="modified" vpLLCPrefetch="platform-default"></biosVfLLCPrefetch>
+    <biosVfMemoryInterleave status="modified" vpChannelInterLeave="platform-default"
+                            vpMemoryInterLeave="platform-default"
+                            vpRankInterLeave="platform-default"></biosVfMemoryInterleave>
+    <biosVfPStateCoordType status="modified" vpPStateCoordType="platform-default"></biosVfPStateCoordType>
+    <biosVfPackageCStateLimit status="modified" vpPackageCStateLimit="platform-default"></biosVfPackageCStateLimit>
+    <biosVfPatrolScrub status="modified" vpPatrolScrub="platform-default"></biosVfPatrolScrub>
+    <biosVfPatrolScrubDuration status="modified" vpPatrolScrubDuration="platform-default"></biosVfPatrolScrubDuration>
+    <biosVfProcessorC1E status="modified" vpProcessorC1E="platform-default"></biosVfProcessorC1E>
+    <biosVfProcessorC3Report status="modified" vpProcessorC3Report="platform-default"></biosVfProcessorC3Report>
+    <biosVfProcessorC6Report status="modified" vpProcessorC6Report="platform-default"></biosVfProcessorC6Report>
+    <biosVfProcessorCState status="modified" vpProcessorCState="platform-default"></biosVfProcessorCState>
+    <biosVfPwrPerfTuning status="modified" vpPwrPerfTuning="platform-default"></biosVfPwrPerfTuning>
+    <biosVfSinglePCTLEnable status="modified" vpSinglePCTLEnable="platform-default"></biosVfSinglePCTLEnable>
+    <biosVfSubNumaClustering status="modified" vpSNC="platform-default"></biosVfSubNumaClustering>
+    <biosVfWorkLoadConfig status="modified" vpWorkLoadConfig="platform-default"></biosVfWorkLoadConfig>
+    <biosVfXPTPrefetch status="modified" vpXPTPrefetch="platform-default"></biosVfXPTPrefetch>
+    <biosVfCkeLowPolicy status="modified" vpCkeLowPolicy="platform-default"></biosVfCkeLowPolicy>
+    <biosVfDramRefreshRate status="modified" vpDramRefreshRate="platform-default"></biosVfDramRefreshRate>
+    <biosVfLvDIMMSupport status="modified" vpLvDDRMode="platform-default"></biosVfLvDIMMSupport>
+    <biosVfMirroringMode status="modified" vpMirroringMode="platform-default"></biosVfMirroringMode>
+    <biosVfNUMAOptimized status="modified" vpNUMAOptimized="platform-default"></biosVfNUMAOptimized>
+    <biosVfSelectMemoryRASConfiguration status="modified"
+                                        vpSelectMemoryRASConfiguration="platform-default"></biosVfSelectMemoryRASConfiguration>
+    <biosVfSparingMode status="modified" vpSparingMode="platform-default"></biosVfSparingMode>
+    <biosVfTPMControl status="modified" vpTPMControl="platform-default"></biosVfTPMControl>
+    <biosVfASPMSupport status="modified" vpASPMSupport="platform-default"></biosVfASPMSupport>
+    <biosVfIOHResource status="modified" vpIOHResource="platform-default"></biosVfIOHResource>
+    <biosVfMMCFGBase status="modified" vpMMCFGBase="platform-default"></biosVfMMCFGBase>
+    <biosVfMemoryMappedIOAbove4GB status="modified"
+                                  vpMemoryMappedIOAbove4GB="platform-default"></biosVfMemoryMappedIOAbove4GB>
+    <biosVfOnboardNIC status="modified" vpOnboard10GbitLOM="platform-default"
+                      vpOnboardGbitLOM="platform-default"></biosVfOnboardNIC>
+    <biosVfPCIeSSDHotPlugSupport status="modified"
+                                 vpPCIeSSDHotPlugSupport="platform-default"></biosVfPCIeSSDHotPlugSupport>
+    <biosVfSrIov status="modified" vpSrIov="platform-default"></biosVfSrIov>
+    <biosVfVgaPriority status="modified" vpVgaPriority="platform-default"></biosVfVgaPriority>
+    <biosVfCDNSupport status="modified" vpCDNSupport="platform-default"></biosVfCDNSupport>
+    <biosVfLOMPortOptionROM status="modified" vpLOMPort0State="platform-default" vpLOMPort1State="platform-default"
+                            vpLOMPort2State="platform-default" vpLOMPort3State="platform-default"
+                            vpLOMPortsAllState="platform-default"></biosVfLOMPortOptionROM>
+    <biosVfPCIOptionROMs status="modified" vpPCIOptionROMs="platform-default"></biosVfPCIOptionROMs>
+    <biosVfPCISlotOptionROMEnable status="modified" vpIOESlot1State="platform-default"
+                                  vpIOESlot2State="platform-default" vpSlot10LinkSpeed="platform-default"
+                                  vpSlot10State="platform-default" vpSlot11LinkSpeed="platform-default"
+                                  vpSlot11State="platform-default" vpSlot12LinkSpeed="platform-default"
+                                  vpSlot12State="platform-default" vpSlot1LinkSpeed="platform-default"
+                                  vpSlot1State="platform-default" vpSlot2LinkSpeed="platform-default"
+                                  vpSlot2State="platform-default" vpSlot3LinkSpeed="platform-default"
+                                  vpSlot3State="platform-default" vpSlot4LinkSpeed="platform-default"
+                                  vpSlot4State="platform-default" vpSlot5LinkSpeed="platform-default"
+                                  vpSlot5State="platform-default" vpSlot6LinkSpeed="platform-default"
+                                  vpSlot6State="platform-default" vpSlot7LinkSpeed="platform-default"
+                                  vpSlot7State="platform-default" vpSlot8LinkSpeed="platform-default"
+                                  vpSlot8State="platform-default" vpSlot9LinkSpeed="platform-default"
+                                  vpSlot9State="platform-default" vpSlotFLOMLinkSpeed="platform-default"
+                                  vpSlotFrontNvme1LinkSpeed="platform-default"
+                                  vpSlotFrontNvme2LinkSpeed="platform-default"
+                                  vpSlotFrontSlot5LinkSpeed="platform-default"
+                                  vpSlotFrontSlot6LinkSpeed="platform-default" vpSlotHBALinkSpeed="platform-default"
+                                  vpSlotHBAState="platform-default" vpSlotIOEMezz1LinkSpeed="platform-default"
+                                  vpSlotIOEMezz1State="platform-default" vpSlotIOENVMe1LinkSpeed="platform-default"
+                                  vpSlotIOENVMe1State="platform-default" vpSlotIOENVMe2LinkSpeed="platform-default"
+                                  vpSlotIOENVMe2State="platform-default" vpSlotIOESlot1LinkSpeed="platform-default"
+                                  vpSlotIOESlot2LinkSpeed="platform-default" vpSlotMLOMLinkSpeed="platform-default"
+                                  vpSlotMLOMState="platform-default" vpSlotMLinkSpeed="platform-default"
+                                  vpSlotMRAIDLinkSpeed="platform-default" vpSlotMRAIDState="platform-default"
+                                  vpSlotMezzState="platform-default" vpSlotN1State="platform-default"
+                                  vpSlotN2State="platform-default" vpSlotRAIDLinkSpeed="platform-default"
+                                  vpSlotRAIDState="platform-default" vpSlotRearNvme1LinkSpeed="platform-default"
+                                  vpSlotRearNvme1State="platform-default" vpSlotRearNvme2LinkSpeed="platform-default"
+                                  vpSlotRearNvme2State="platform-default" vpSlotRiser1LinkSpeed="platform-default"
+                                  vpSlotRiser1Slot1LinkSpeed="platform-default"
+                                  vpSlotRiser1Slot2LinkSpeed="platform-default"
+                                  vpSlotRiser1Slot3LinkSpeed="platform-default" vpSlotRiser2LinkSpeed="platform-default"
+                                  vpSlotRiser2Slot4LinkSpeed="platform-default"
+                                  vpSlotRiser2Slot5LinkSpeed="platform-default"
+                                  vpSlotRiser2Slot6LinkSpeed="platform-default" vpSlotSASState="platform-default"
+                                  vpSlotSBMezz1LinkSpeed="platform-default" vpSlotSBMezz1State="platform-default"
+                                  vpSlotSBMezz2LinkSpeed="platform-default" vpSlotSBMezz2State="platform-default"
+                                  vpSlotSBNVMe1LinkSpeed="platform-default" vpSlotSBNVMe1State="platform-default"
+                                  vpSlotSIOC1LinkSpeed="platform-default" vpSlotSIOC1State="platform-default"
+                                  vpSlotSIOC2LinkSpeed="platform-default" vpSlotSIOC2State="platform-default"
+                                  vpSlotSSDSlot1LinkSpeed="platform-default"
+                                  vpSlotSSDSlot2LinkSpeed="platform-default"></biosVfPCISlotOptionROMEnable>
+    <biosVfPciRomClp status="modified" vpPciRomClp="platform-default"></biosVfPciRomClp>
+    <biosVfIntelVTForDirectedIO status="modified" vpIntelVTDATSSupport="platform-default"
+                                vpIntelVTDCoherencySupport="platform-default"
+                                vpIntelVTDInterruptRemapping="platform-default"
+                                vpIntelVTDPassThroughDMASupport="platform-default"
+                                vpIntelVTForDirectedIO="platform-default"></biosVfIntelVTForDirectedIO>
+    <biosVfBootOptionNumRetry status="modified" vpBootOptionNumRetry="platform-default"></biosVfBootOptionNumRetry>
+    <biosVfBootOptionReCoolDown status="modified"
+                                vpBootOptionReCoolDown="platform-default"></biosVfBootOptionReCoolDown>
+    <biosVfBootOptionRetry status="modified" vpBootOptionRetry="platform-default"></biosVfBootOptionRetry>
+    <biosVfIPV6PXE status="modified" vpIPV6PXE="platform-default"></biosVfIPV6PXE>
+    <biosVfOnboardStorage status="modified" vpOnboardSCUStorageSupport="platform-default"></biosVfOnboardStorage>
+    <biosVfOnboardStorageSWStack status="modified"
+                                 vpOnboardSCUStorageSWStack="platform-default"></biosVfOnboardStorageSWStack>
+    <biosVfPSata status="modified" vpPSata="platform-default"></biosVfPSata>
+    <biosVfPowerOnPasswordSupport status="modified" vpPOPSupport="platform-default"></biosVfPowerOnPasswordSupport>
+    <biosVfSataModeSelect status="modified" vpSataModeSelect="platform-default"></biosVfSataModeSelect>
+</biosSettings>

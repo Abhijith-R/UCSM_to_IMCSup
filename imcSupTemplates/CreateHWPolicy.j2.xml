@@ -1,0 +1,18 @@
+<cuicOperationRequest>
+<operationType>HARDWARE_POLICY_CREATE</operationType>
+<payload>
+<![CDATA[
+<CIMCHardwarePolicy>
+<policyName>{{ name }}</policyName>
+
+<policyType>{{ type }}</policyType>
+
+<modular>false</modular>
+
+<policyDefinition>{{ policyDef }}</policyDefinition>
+
+</CIMCHardwarePolicy>
+
+]]>
+</payload>
+</cuicOperationRequest>

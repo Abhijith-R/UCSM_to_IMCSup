@@ -1,0 +1,55 @@
+<adaptors RebootOnUpdate="false">
+    <adaptorUnit adminState="adaptor-reset-default" description="" id="1" status="modified">
+        <adaptorGenProfile fipMode="enabled" lldp="disabled" vntagMode="disabled"/>
+        {% for vnic in vicAdapterPolicy["vNICs"] %}
+        <adaptorHostEthIf channelNumber="{{vicAdapterPolicy['vNICs']|length - loop.index + 1}}" classOfService="0" mac="AUTO" mtu="{{vnic.mtu}}" name="{{vnic.name}}" pxeBoot="disabled"
+                          rn="host-eth-{{vnic.name}}" status="modified" uplinkPort="{{vicAdapterPolicy['vNICs']|length - loop.index}}">
+            <adaptorEthGenProfile arfs="" order="ANY" pciLink="0" rateLimit="OFF" trustedClassOfService="disabled"
+                                  uplinkFailbackTimeout="5" vlan="NONE" vlanMode="TRUNK" vmq=""/>
+            <adaptorEthCompQueueProfile count="5"/>
+            <adaptorEthRdmaProfile memoryRegions="131072" queuePairs="256" resourceGroups="32"/>
+            <adaptorEthOffloadProfile largeReceive="enabled" tcpRxChecksum="enabled" tcpSegment="enabled"
+                                      tcpTxChecksum="enabled"/>
+            <adaptorEthRecvQueueProfile count="4" ringSize="512"/>
+            <adaptorIpV4RssHashProfile ipHash="enabled" tcpHash="enabled"/>
+            <adaptorExtIpV6RssHashProfile ipHash="disabled" tcpHash="disabled"/>
+            <adaptorEthWorkQueueProfile count="1" ringSize="256"/>
+            <adaptorIpV6RssHashProfile ipHash="enabled" tcpHash="enabled"/>
+            <adaptorRssProfile receiveSideScaling="enabled"/>
+            <adaptorEthInterruptProfile coalescingTime="125" coalescingType="MIN" count="8" mode="MSIx"/>
+            <adaptorEthISCSIProfile dhcpISCSI="Disabled" dhcpId="" dhcpNetworkSettings="Disabled" dhcpTimeout="60"
+                                    initiatorChapName="" initiatorChapSecret="" initiatorGateway=""
+                                    initiatorIPAddress="" initiatorName="" initiatorPrimaryDns=""
+                                    initiatorPriority="primary" initiatorSecondaryDns="" initiatorSubnetMask=""
+                                    initiatorTCPTimeout="15" linkBusyRetryCount="15" linkupTimeout="15"
+                                    primaryTargetBootLun="0" primaryTargetChapName="" primaryTargetChapSecret=""
+                                    primaryTargetIPAddress="" primaryTargetName="" secondaryTargetBootLun="0"
+                                    secondaryTargetChapName="" secondaryTargetChapSecret="" secondaryTargetIPAddress=""
+                                    secondaryTargetName=""/>
+            <adaptorEthUSNICProfile classOfService="0" coalescingTime="125" coalescingType="MIN"
+                                    completionQueueCount="4" interruptCount="4" largeReceive="enabled"
+                                    receiveQueueCount="2" receiveQueueRingSize="512" tcpRxChecksum="enabled"
+                                    tcpSegment="enabled" tcpTxChecksum="enabled" transmitQueueCount="2"
+                                    transmitQueueRingSize="256" usnicCount="112"/>
+        </adaptorHostEthIf>
+        {% endfor %}
+        {% for vhba in vicAdapterPolicy["vHBAs"] %}
+        <adaptorHostFcIf adminPersistentBindings="rebuild" channelNumber="{{vicAdapterPolicy['vNICs']|length + vicAdapterPolicy['vHBAs']|length - loop.index + 1}}"
+                         name="{{vhba.name}}" rn="host-fc-{{vhba.name}}"
+                         sanBoot="disabled" status="modified" wwnn="AUTO" wwpn="AUTO">
+            <adaptorFcGenProfile classOfService="3" mac="AUTO" maxDataFieldSize="2112" order="ANY" pciLink="0"
+                                 persistentLunBind="disabled" rateLimit="OFF" vlan="NONE"/>
+            <adaptorFcErrorRecoveryProfile errorDetectTimeout="2000" fcpErrorRecovery="disabled" ioTimeoutRetry="0"
+                                           linkDownTimeout="30000" portDownIoRetryCount="8" portDownTimeout="10000"
+                                           resourceAllocationTimeout="10000"/>
+            <adaptorFcInterruptProfile mode="MSIx"/>
+            <adaptorFcPortFLogiProfile retries="INFINITE" timeout="2000"/>
+            <adaptorFcPortPLogiProfile retries="8" timeout="2000"/>
+            <adaptorFcPortProfile ioThrottleCount="512" lunQueueDepth="20" lunsPerTarget="256"/>
+            <adaptorFcRecvQueueProfile ringSize="64"/>
+            <adaptorFcWorkQueueProfile ringSize="64"/>
+            <adaptorFcCdbWorkQueueProfile count="1" ringSize="512"/>
+        </adaptorHostFcIf>
+        {% endfor %}
+    </adaptorUnit>
+</adaptors>
